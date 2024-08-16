@@ -1,0 +1,29 @@
+
+.table{
+    
+    margin: auto;
+    align-items: center;
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.employees{
+  overflow: auto;
+    /* background-image: linear-gradient(to right, rgba(158, 173, 168, 0.5), rgba(204, 0, 255, 0.3)); */
+    position: relative;
+    padding: 36px;
+    width: 100%;
+}
+
+
+.center-screen {
+    /* background-color: black; */
+    margin-top: 5%;
+  }
+
+  .text1{
+    font-weight: 500;
+    color: rgb(49, 48, 48);
+    letter-spacing: 10px;
+    word-spacing: 10px;
+  }

@@ -1,0 +1,215 @@
+.SideBar {
+    position: relative;
+    box-shadow: 0 0 3px;
+    padding: 20px;
+    width: 80px;
+    transition: all 0.4s ease;
+    background:   rgb(5, 83, 56);
+    overflow: visible;
+  }
+
+  
+  .SideBar.active {
+    width: 250px;
+  }
+
+
+  
+  .user-img {
+    width: 50px;
+    border-radius: 100%;
+    border: 1.5px solid rgb(194, 207, 118);
+    /* position: relative; */
+  }
+  
+  .user{
+    color: white;
+    display: flex;
+    transition: all 0.5 ease;
+  }
+  .user p{
+    align-items: center;
+    position: relative;
+    margin-left: 10px;
+    opacity: 0;
+    
+  }
+  .SideBar.active .user p{
+    opacity: 1;
+    transition: all 0.5 ease;
+  }
+
+  .bold{
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  
+  .SideBar  ul li {
+    position: relative;
+    list-style-type: none;
+    height: 50px;
+    margin: 0.8rem auto;
+    line-height: 50px;
+  }
+  
+  .SideBar ul li a {
+    color: rgb(224, 255, 237);
+    text-decoration: none;
+    border-radius: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    transition: all 0.2s ease;
+    align-items: center;
+    font-size: medium;
+    text-decoration: none;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1.4rem; 
+
+  }
+  
+  .SideBar ul li a:hover{
+        background-color: #deffef;
+        color: black;
+        align-items: center;
+        font-size: medium;
+        text-decoration: none;
+        border-radius: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size:1.4rem;   
+        
+  }
+  .bx-menu{
+    font-size: x-large;
+    color: #deffef;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    padding: 3px;
+  }
+  .bx-menu:hover{
+    font-size: x-large;
+    color: #464646;
+    background-color: #deffef;
+  }
+
+  .SideBar ul li a i{
+    min-width: 20%;
+    text-align: center;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 50px;
+  }
+  
+  .SideBar .nav-item{
+    display: none;
+    font-size: medium;
+    
+  }
+  .SideBar.active .nav-item{
+    /* transition-delay: 1s; */
+    display: block;
+  }
+
+
+  .SideBar #btn {
+    position: absolute;
+    top:.4rem;
+    left: 50%;
+    font-size: 1.2rem;
+    line-height: 50px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    
+    transition: all 0.5s ease;
+  }
+
+
+
+  .SideBar.active #btn{
+    left: 90%;
+  }
+
+  .SideBar .top .logo {
+    position: relative;
+    
+    height: 50px;
+    width:100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+ 
+
+  .SideBar.active .top .logo {
+    height: 50px;
+    width:100%;
+    align-items: center;
+    pointer-events: none;
+    opacity: 1;
+
+    
+  }
+
+  .SideBar.active .top .logo {
+    font-size: 1.8rem;
+    padding-right: 5px;
+    align-items: center;
+    display: flex;
+    
+    color: rgb(230, 255, 87);
+    /* box-shadow: 0 0 10px; */
+    margin-bottom: 20px;
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+    border-width: 100%;
+   letter-spacing: 10px;
+  }
+
+   .top .logo {
+    
+    display: flex;
+  }
+
+  .logo-text{
+    font-size: 16px;
+    align-items: center;
+    margin-left: 15px;
+    color: white;
+    font-weight: 800;
+    word-spacing: 10px;
+  }
+
+  .SideBar ul li .tooltip{
+    position: absolute;
+    left: 125px;
+    top:50%;
+    color: rgb(56, 56, 56);
+    transform: translate(-50%, -50%);
+    border-radius: 10%;
+    box-shadow: 0 0 5px;
+    background: rgba(255, 255, 255,0.5);
+    padding: .4rem 1.2rem;
+    line-height: 1.8rem;
+    opacity: 0;
+   
+  }
+ 
+
+  .SideBar ul li:hover .tooltip{
+    opacity: 1;
+  }
+
+
+  .SideBar.active ul li .tooltip{
+    display: none;
+  }
+
+  .SideBar ul li .tooltip:hover{
+    display: none;
+  }
