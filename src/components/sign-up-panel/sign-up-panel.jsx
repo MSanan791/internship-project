@@ -17,7 +17,7 @@ export default function Signup(){
     async function SignUp(){
         try{
           console.log(`coming from signup function: ${user}`)
-          let response = await axios.post('http://localhost:9000/login/:1', user)
+          let response = await axios.post('http://23.22.252.76:9000/login/:1', user)
           window.alert(response.data)
         }catch(err){
           console.error("error occured: ", err);
@@ -52,7 +52,7 @@ export default function Signup(){
           return ({...prevState, started : true} )
         })
         //clconsole.log(file)
-        axios.post('http://localhost:9000/signup/uploadfile', fd, {
+        axios.post('http://23.22.252.76:9000/signup/uploadfile', fd, {
           onUploadProgress: (progressEvent) => { setProgress(prevState => 
           { 
             return {...prevState, pc :  progressEvent.progress*100}

@@ -12,7 +12,7 @@ export default function MyComponent(){
  
   async function LogIn(){
     try{
-      const response = await axios.post('http://localhost:9000/login/', user)
+      const response = await axios.post('http://23.22.252.76:9000/login/', user)
       // console.log(response.data);
       return response.data
     }catch(err){
