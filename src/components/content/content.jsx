@@ -12,7 +12,14 @@ export default function Content(){
 
   async function getEmployees() {
     try {
-      const response = await axios.get('http://54.209.119.45:9000/users/employees');
+      const response = await axios.get('http://54.209.119.45:9000/users/employees',
+        {
+          headers: {
+            "Cache-Control": "no-cache",
+            "Content-Type": "application/x-www-form-urlencoded",
+          },
+        }
+      );
       console.log(response);
       setTableData(response.data); // Use response.data to access the data
     } catch (error) {
