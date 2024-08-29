@@ -11,7 +11,7 @@ export default function Content(){
 
   async function getEmployees() {
     try {
-      const response = await axios.get('http://23.22.252.76:9000/users/employees');
+      const response = await axios.get('https://cors-anywhere.herokuapp.com/http://23.22.252.76:9000/users/employees');
       console.log(response);
       setTableData(response.data); // Use response.data to access the data
     } catch (error) {
